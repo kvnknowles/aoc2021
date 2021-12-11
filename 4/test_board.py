@@ -30,6 +30,14 @@ def test_builds_all_possible_columns():
                                          [4, 4, 4, 4, 4],
                                          [5, 5, 5, 5, 5]]
 
+def test_str_method():
+    input = [1, 2, 3, 4, 5,
+             1, 2, 3, 4, 5,
+             1, 2, 3, 4, 5,
+             1, 2, 3, 4, 5,
+             1, 2, 3, 4, 5]
+
+    assert str(Board(input)).startswith('1,2,3,4,5')
 
 def test_get_all_possible_winners():
     input = [1, 2, 3, 4, 5,
